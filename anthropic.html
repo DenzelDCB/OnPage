@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anthropic City Simulator</title>
+    <title>3D City Simulator</title>
     <style>
         body {
             margin: 0;
@@ -197,7 +197,7 @@
     <div id="canvas-container"></div>
     
     <div id="ui-overlay">
-        <h2>🏙️ Anthropic City</h2>
+        <h2>🏙️ 3D City</h2>
         <p style="font-size: 16px;">Explore the city!</p>
         <p style="font-size: 12px; opacity: 0.8; margin-top: 10px;">Press H for help</p>
     </div>
@@ -205,7 +205,7 @@
     <button id="help-button">❓ Help</button>
     
     <div id="help-modal">
-        <h2>🏙️ Welcome to Anthropic City!</h2>
+        <h2>🏙️ Welcome to 3D City!</h2>
         
         <div class="help-section">
             <h3>🎮 Controls</h3>
@@ -1090,7 +1090,7 @@
             dialogueName.textContent = `${character.userData.name} - ${character.userData.role}`;
             
             const greetings = [
-                `Hey! I'm ${character.userData.name}. Welcome to Anthropic City!`,
+                `Hey! I'm ${character.userData.name}. Welcome to 3D City!`,
                 `Hi there! ${character.userData.name} here. Enjoying the city?`,
                 `Hello! I'm ${character.userData.name}. Have you explored all the floors yet?`
             ];
@@ -1114,7 +1114,7 @@
                         dialogueBox.style.display = 'none';
                     } else {
                         const responses = {
-                            "Tell me about the city": "This is Anthropic City! We've got offices, labs, and even a rooftop garden. Use the elevators and stairs to explore!",
+                            "Tell me about the city": "This is 3D City! We've got offices, labs, and even a rooftop garden. Use the elevators and stairs to explore!",
                             "What's on each floor?": "Floor 1 has the lobby and meeting rooms. Floor 2 is our main office. Floor 3 is the rooftop garden - it's beautiful up there!",
                             "Any hidden secrets?": "Well... I heard there's a secret server room somewhere. And the rooftop garden has some surprises. Keep exploring!"
                         };
@@ -1425,4 +1425,5 @@
         animate(0);
     </script>
 </body>
+
 </html>
